@@ -1,0 +1,55 @@
+/* ==========================================================================
+   INVITATION BACKGROUNDS — Luxury Pink & Lotus Theme System
+   Palette: Blooming Lotus (#C44D74) / Velvet Wine (#5A1A2E) / Lotus Pink (#E86A8D)
+            Soft Petal Blush (#EAA6BA) / Petal White (#FFF5F7) / Blush Paper (#FCECF0)
+   ========================================================================== */
+
+/* Section Spacing & Layout Rhythm */
+#hero,
+#invitation,
+#calendar,
+#countdown,
+#gallery,
+#rsvp {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: var(--paper);
+}
+
+#calendar, #gallery {
+  background-color: var(--paper-deep);
+}
+
+/* Subtle Golden Divider Accents Between Sections */
+#invitation::after,
+#calendar::after,
+#countdown::after,
+#gallery::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(400px, 80%);
+  height: 1px;
+  background: linear-gradient(90deg, transparent, var(--gold), transparent);
+}
+
+/* Content Container Max Widths */
+#invitation .invitation-content,
+#calendar .calendar-content,
+#countdown .countdown-content,
+#rsvp .rsvp-content {
+  max-width: 860px;
+  margin: 0 auto;
+}
+
+#gallery .gallery-content {
+  max-width: 1040px;
+  margin: 0 auto;
+}
+
+footer#thankyou .footer-content {
+  max-width: 760px;
+  margin: 0 auto;
+}
